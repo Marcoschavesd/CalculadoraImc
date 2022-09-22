@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:wght@100&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: 'Akaya Kanadaka', 'Roboto', sans-serif;
     color: black;
     font-weight: 400;
 }
@@ -11,8 +12,8 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(4, 52, 184) 0%, rgb(26, 158, 151) 35%, rgba(0,212,255,1) 100%);
+    background-image: url(./bg.jpg);
+    background-size: cover;
 }
 .container {
     display: flex;
@@ -20,8 +21,9 @@ body {
     width: 400px;
     height: 550px;
     border-radius: 12px;
-    box-shadow: 2px 2px 2px #111111;
-    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
 }
 .form {
     width: 80%;
@@ -45,12 +47,15 @@ body {
     justify-content: space-around;
     padding: 8px;
 }
+.socials a:hover {
+    font-size: 24px;
+}
 h1 {
-    color: rgba(255, 255, 255, 0.815);
     text-transform: capitalize;
     text-align: center;
     padding: 5px;
     border-bottom: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.815);
 }
 input {
     text-align: right;
@@ -82,6 +87,7 @@ button {
 }
 button:hover {
     cursor: pointer;
-    background-color: #fff;
+    color: #fff;
+    background-color: rgb(17, 173, 201);
     transition: .5s;
 }
